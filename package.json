@@ -2,8 +2,8 @@
   "name": "mecab-ffi",
   "version": "0.1.0",
   "author": {
-    "name": "Taeho Kim",
-    "email": "xissysnd@gmail.com"
+    "name": "Kim, Jang-hwan",
+    "email": "janghwan@gmail.com"
   },
   "main": "./index",
   "dependencies": {
@@ -15,10 +15,10 @@
   "description": "A node.js module for binding MeCab asynchronously using foreign function interface.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xissy/node-mecab-ffi.git"
+    "url": "https://github.com/jangxyz/node-mecab-ffi.git"
   },
   "bugs": {
-    "url": "https://github.com/xissy/node-mecab-ffi/issues"
+    "url": "https://github.com/jangxyz/node-mecab-ffi/issues"
   },
   "devDependencies": {
     "coffee-script": ">= 1.8.0",
