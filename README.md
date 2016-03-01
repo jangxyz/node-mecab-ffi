@@ -1,4 +1,22 @@
-# node-mecab-ffi
+# node-mecab-ffi clone
+
+<div>
+  This is a clone of [node-mecab-ffi](https://github.com/xissy/node-mecab-ffi) project, which is a ffi wrapper over the [MeCab](http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html) project. It aims to support more Javascript'ic approaches.
+
+  For now, the only change is that you can build a new `MeCab` object with arguments:
+
+  ```
+    var MeCab = require('mecab-ffi').MeCab;
+
+    // can use arguments used in mecab
+    var mecab = new MeCab('-u user_defined_dictionary.dic');
+    mecab.parse('아주대', function(err, result) { 
+      console.log(result);
+    });
+  ```
+
+  Being a superset, you still can use all previous methods as well.
+</div>
 
 A node.js module for binding MeCab asynchronously using foreign function interface.
 This module supports MacOS(surely Unix/Linux) and multi-thread safety.
@@ -20,7 +38,7 @@ $ npm install mecab-ffi
 
 Via git directly:
 ```
-$ npm install git+https://github.com/xissy/node-mecab-ffi.git
+$ npm install git+https://github.com/jangxyz/node-mecab-ffi.git
 ```
 
 ## Quick Start
@@ -218,26 +236,4 @@ join (fMap1, fMap2, function (map1, map2) {
 //Result
 2
 ```
-
-
-## License
-
-Released under the MIT License
-
-Copyright (c) 2013 Taeho Kim <xissysnd@gmail.com>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/xissy/node-mecab-ffi/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
