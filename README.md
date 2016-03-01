@@ -1,22 +1,23 @@
 # node-mecab-ffi clone
 
-<div>
-  This is a clone of [node-mecab-ffi](https://github.com/xissy/node-mecab-ffi) project, which is a ffi wrapper over the [MeCab](http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html) project. It aims to support more Javascript'ic approaches.
+---
+  **NOTE** This is a _clone_ of [node-mecab-ffi](https://github.com/xissy/node-mecab-ffi) project, which is a ffi wrapper over the [MeCab](http://mecab.googlecode.com/svn/trunk/mecab/doc/index.html) project. It aims to support more Javascript'ic approaches.
 
   For now, the only change is that you can build a new `MeCab` object with arguments:
 
-  ```
-    var MeCab = require('mecab-ffi').MeCab;
+```javascript
+var MeCab = require('mecab-ffi').MeCab;
 
-    // can use arguments used in mecab
-    var mecab = new MeCab('-u user_defined_dictionary.dic');
-    mecab.parse('아주대', function(err, result) { 
-      console.log(result);
-    });
-  ```
+// can use arguments used in mecab
+var mecab = new MeCab('-u user_defined_dictionary.dic');
+mecab.parse('아주대', function(err, result) { 
+  console.log(result);
+});
+```
 
   Being a superset, you still can use all previous methods as well.
-</div>
+
+---
 
 A node.js module for binding MeCab asynchronously using foreign function interface.
 This module supports MacOS(surely Unix/Linux) and multi-thread safety.
