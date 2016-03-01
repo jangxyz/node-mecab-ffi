@@ -32,10 +32,6 @@ Warning:
 To use libmecab in MacOS, you must install the newest gcc, automake and autoconf first and compile MeCab and dictonary with it. 
 Refer to [here](http://www.ficksworkshop.com/blog/14-coding/65-installing-gcc-on-mac). Otherwise it could split errors which cannot find dictionary directory or showing abort trap when you try to parse input strings.
 
-Via [npm](https://npmjs.org):
-```
-$ npm install mecab-ffi
-```  
 
 Via git directly:
 ```
